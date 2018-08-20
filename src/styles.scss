@@ -1,0 +1,96 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~./theme.scss";
+
+
+body { 
+    color: #fff;
+    background-color: #212121;
+    margin: 0 auto;
+    max-width: 768px;
+}
+.container {
+    margin-top: 10px;
+}
+.filter_wrapper {
+    // display: block;
+    text-align: center;
+}
+.mat-tab-links {
+    text-align: right;
+    display: block;
+}
+.mat-tab-link {
+    text-decoration: none !important;
+    display: inline-block;
+}
+#logo {
+    width: 75%;
+    /* width: 100%; */
+}
+.col {
+    padding: 5px;
+}
+
+table {
+    margin-top: 10px;
+    width: 100%;
+}
+.mat-checkbox {
+    margin: 5px;
+}
+.mat-chip {
+    line-height: 18px;
+}
+
+.mat-card {
+    padding: 0 24px !important;
+}
+
+.mat-card-title {
+    font-weight: bold !important;
+    font-size: 18px !important;
+    font-family: "Comic Sans MS", cursive, sans-serif !important;
+}
+
+.mat-form-field {
+    /* align-self: auto;
+    margin: 0 auto; */
+    width: 100%; 
+}
+
+/* .mat-chip-list {
+    align-self: auto;
+} */
+
+.filter_fields {
+    display: flex;
+}
+
+
+
+
+
+// .mat-checkbox {
+//     color: #fff;
+// }
+// .check_container {
+//     display: block;
+//     .mat-chip-list, .mat-checkbox {
+//         display: inline-block;
+//     }
+// }
+
+@media (max-width: 599px) {
+    .mat-card {
+        padding: 0px 16px !important;
+    }
+}
+
+@media (max-width: 599px) {
+    .mat-card-image {
+        width: calc(100% + 32px) !important;
+        margin: 0px -16px !important;
+    }
+}

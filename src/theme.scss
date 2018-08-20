@@ -1,0 +1,122 @@
+
+@import '~@angular/material/theming';
+@include mat-core();
+
+$kukko-orange: (
+    50 : #fce5e0,
+    100 : #f7beb3,
+    200 : #f29380,
+    300 : #ed684d,
+    400 : #e94726,
+    500 : #e52700,
+    600 : #e22300,
+    700 : #de1d00,
+    800 : #da1700,
+    900 : #d30e00,
+    A100 : #fffbfb,
+    A200 : #ffc9c8,
+    A400 : #ff9795,
+    A700 : #ff7e7b,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+
+$kukko-yellow: (
+    50 : #fefee3,
+    100 : #fcfcb8,
+    200 : #fafa89,
+    300 : #f7f75a,
+    400 : #f6f636,
+    500 : #f4f413,
+    600 : #f3f311,
+    700 : #f1f10e,
+    800 : #efef0b,
+    900 : #ecec06,
+    A100 : #ffffff,
+    A200 : #ffffe1,
+    A400 : #ffffae,
+    A700 : #ffff94,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+
+
+$my-app-primary: mat-palette($kukko-orange, 500);
+$my-app-accent:  mat-palette($kukko-yellow, 500, 900, A100);
+
+// Custom style for my anchor elements
+a:hover {
+    color: mat-color($kukko-orange, 200);
+    text-decoration: none;
+  }
+
+$my-light-theme: mat-light-theme($my-app-primary, $my-app-accent);
+$my-app-theme: mat-dark-theme($my-app-primary, $my-app-accent);
+@include angular-material-theme($my-app-theme);
+@include mat-core-theme($my-app-theme);
+  @include mat-autocomplete-theme($my-app-theme);
+  @include mat-badge-theme($my-app-theme);
+  @include mat-bottom-sheet-theme($my-app-theme);
+  @include mat-button-theme($my-app-theme);
+  @include mat-button-toggle-theme($my-app-theme);
+  @include mat-card-theme($my-light-theme);
+  @include mat-checkbox-theme($my-app-theme);
+  @include mat-chips-theme($my-app-theme);
+  @include mat-table-theme($my-app-theme);
+  @include mat-datepicker-theme($my-app-theme);
+  @include mat-dialog-theme($my-app-theme);
+  @include mat-divider-theme($my-app-theme);
+  @include mat-expansion-panel-theme($my-app-theme);
+  @include mat-form-field-theme($my-app-theme);
+  @include mat-grid-list-theme($my-app-theme);
+  @include mat-icon-theme($my-app-theme);
+  @include mat-input-theme($my-app-theme);
+  @include mat-list-theme($my-app-theme);
+  @include mat-menu-theme($my-app-theme);
+  @include mat-paginator-theme($my-app-theme);
+  @include mat-progress-bar-theme($my-app-theme);
+  @include mat-progress-spinner-theme($my-app-theme);
+  @include mat-radio-theme($my-app-theme);
+  @include mat-select-theme($my-app-theme);
+  @include mat-sidenav-theme($my-app-theme);
+  @include mat-slide-toggle-theme($my-app-theme);
+  @include mat-slider-theme($my-app-theme);
+  @include mat-stepper-theme($my-app-theme);
+  @include mat-sort-theme($my-app-theme);
+  @include mat-tabs-theme($my-app-theme);
+  @include mat-toolbar-theme($my-app-theme);
+  @include mat-tooltip-theme($my-app-theme);
+  @include mat-tree-theme($my-app-theme);
+  @include mat-snack-bar-theme($my-app-theme);

@@ -1,0 +1,27 @@
+<div class="mat-elevation-z6">
+  <nav mat-tab-nav-bar>
+      <a id="logo" mat-tab-link routerLink="/">
+      KUKKO
+    </a>
+      <a mat-tab-link
+      [matMenuTriggerFor]="menu"
+      >
+      <mat-icon>menu</mat-icon>
+    </a>
+    <mat-menu #menu="matMenu" yPosition="below" xPosition="before" [overlapTrigger]="false">
+          <mat-divider></mat-divider>
+          <a mat-menu-item [routerLink]="['/']"><mat-icon>home</mat-icon>Home</a>
+          <mat-divider></mat-divider>
+          <a mat-menu-item [routerLink]="['/beers']"><mat-icon svgIcon="pint"></mat-icon>Beers</a>
+          <mat-divider></mat-divider>
+          <a mat-menu-item [routerLink]="['/whiskeys']"><mat-icon svgIcon="whiskey"></mat-icon>Whiskeys</a>
+          <mat-divider></mat-divider>
+          <a mat-menu-item [routerLink]="['/rhum-cognac']"><mat-icon svgIcon="cognac"></mat-icon>Rhum & Cognac</a>
+          <mat-divider></mat-divider>
+          <a mat-menu-item [routerLink]="['/ciders']"><mat-icon svgIcon="cider"></mat-icon>Ciders</a>
+          <mat-divider></mat-divider>
+          <a mat-menu-item [routerLink]="['/snacks']"><mat-icon svgIcon="nachos"></mat-icon>Snacks</a>
+          <mat-divider></mat-divider>
+    </mat-menu>
+    </nav>
+</div>
